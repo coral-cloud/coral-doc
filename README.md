@@ -1,13 +1,10 @@
-# vue-element-admin-site
-The documentation source of [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)
+# docker-site
 
-[Online](https://panjiachen.github.io/vue-element-admin-site)
-
-## Development
+## 1.development
 
 ```bash
 # clone the project
-git clone git@github.com:PanJiaChen/vue-element-admin-site.git
+git clone https://github.com/helium-cloud/doc-site.git
 
 # install dependency
 npm install
@@ -16,6 +13,10 @@ npm install
 npm run dev
 ```
 
-open http://localhost:8080/vue-element-admin-site/
+## 2.view
+
+open http://localhost:8080/doc/
+
+## 3.tool
 
 > Generator by [vuepress](https://github.com/vuejs/vuepress)

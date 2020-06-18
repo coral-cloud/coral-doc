@@ -57,6 +57,6 @@ export default {
 
 ## 源码 && Demo
 
-- [在线源码](https://github.com/PanJiaChen/vue-element-admin/blob/master/src/components/Pagination/index.vue)
+- [在线源码](https://github.com/PanJiaChen/doc-site/blob/master/src/components/Pagination/index.vue)
 
-- [在线 Demo](https://panjiachen.github.io/vue-element-admin/#/table/complex-table)
+- [在线 Demo](https://panjiachen.github.io/doc-site/#/table/complex-table)

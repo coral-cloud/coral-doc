@@ -43,7 +43,6 @@ import Sidebar from '@default-theme/Sidebar.vue'
 import SWUpdatePopup from '@default-theme/SWUpdatePopup.vue'
 import { resolveSidebarItems } from '@default-theme/util'
 import Swal from 'sweetalert2'
-import { getCodefund, loadGitter } from './utils'
 
 export default {
   components: { Home, Page, Sidebar, Navbar, SWUpdatePopup },
@@ -118,18 +117,11 @@ export default {
     $route: {
       handler: function(val, oldVal) {
         if (this.$isServer) return
-
-        if (this.isHome || this.isDonate) {
-          getCodefund('bottom-bar')
-        } else {
-          getCodefund()
-        }
       },
       immediate: true
     }
   },
   mounted() {
-    loadGitter()
     window.addEventListener('scroll', this.onScroll)
     // configure progress bar
     nprogress.configure({ showSpinner: false })

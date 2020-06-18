@@ -1,13 +1,13 @@
 var nav = require('./nav.js')
-var { EcosystemNav, ComponentNav } = nav
+var { IndustryNav, ProductNav, TechnicalNav, DevNav, PersonNav } = nav
 
 var utils = require('./utils.js')
 var { genNav, getComponentSidebar, deepClone } = utils
 
 module.exports = {
-  title: 'vue-element-admin',
-  description: 'A magical vue admin',
-  base: '/vue-element-admin-site/',
+  title: 'doc-site',
+  description: '文档站点',
+  base: '/doc-site/',
   head: [
     [
       'link',
@@ -18,154 +18,39 @@ module.exports = {
     ]
   ],
   themeConfig: {
-    repo: 'PanJiaChen/vue-element-admin',
-    docsRepo: 'PanJiaChen/vue-element-admin-site',
+    repo: 'wuhaocn/doc-site',
+    docsRepo: 'wuhaocn/doc-site',
     docsDir: 'docs',
-    editLinks: true,
+    editLinks: false,
     sidebarDepth: 3,
-    algolia: {
-      apiKey: 'ffce0083d0830de5f562c045a481410b',
-      indexName: 'vue_element_admin'
-    },
     locales: {
       '/': {
-        label: 'English',
-        selectText: 'Languages',
-        editLinkText: 'Edit this page on GitHub',
-        nav: [
-          {
-            text: 'Guide',
-            link: '/guide/'
-          },
-          {
-            text: 'Features',
-            items: genNav(deepClone(ComponentNav), 'EN')
-          },
-          {
-            text: 'Ecosystem',
-            items: genNav(deepClone(EcosystemNav), 'EN')
-          },
-          {
-            text: 'Donate',
-            link: '/donate/'
-          },
-          {
-            text: '中文站点(gitee)',
-            link: 'https://panjiachen.gitee.io/vue-element-admin-site/zh/'
-          }
-        ],
-        sidebar: {
-          '/guide/': [
-            {
-              title: 'Essentials',
-              collapsable: false,
-              children: genEssentialsSidebar()
-            },
-            {
-              title: 'Advanced',
-              collapsable: false,
-              children: genAdvancedSidebar()
-            },
-            {
-              title: 'Other',
-              collapsable: false,
-              children: [
-                '/guide/other/gitter.md',
-                '/guide/other/release-notes.md'
-              ]
-            }
-          ],
-          '/feature/component/': getComponentSidebar(
-            deepClone(ComponentNav),
-            'EN'
-          ),
-          '/feature/script/': [
-            '/feature/script/svgo.md',
-            '/feature/script/new.md'
-          ]
-        }
-      },
-      '/es/': {
-        label: 'Español',
-        selectText: 'Idiomas',
-        editLinkText: 'Editar esta página en GitHub',
-        nav: [
-          {
-            text: 'Guía',
-            link: '/es/guide/'
-          },
-          {
-            text: 'Características',
-            items: genNav(deepClone(ComponentNav), 'ES')
-          },
-          {
-            text: 'Ecosistema',
-            items: genNav(deepClone(EcosystemNav), 'ES')
-          },
-          {
-            text: 'Donar',
-            link: '/es/donate/'
-          }
-        ],
-        sidebar: {
-          '/es/guide/': [
-            {
-              title: 'Esenciales',
-              collapsable: false,
-              children: genEssentialsSidebar('/es')
-            },
-            {
-              title: 'Avanzado',
-              collapsable: false,
-              children: genAdvancedSidebar('/es')
-            },
-            {
-              title: 'Otro',
-              collapsable: false,
-              children: [
-                '/es/guide/other/gitter.md',
-                '/es/guide/other/release-notes.md'
-              ]
-            }
-          ],
-          '/es/feature/component/': getComponentSidebar(
-            deepClone(ComponentNav),
-            'ES'
-          ),
-          '/es/feature/script/': [
-            '/es/feature/script/svgo.md',
-            '/es/feature/script/new.md'
-          ]
-        }
-      },
-      '/zh/': {
         label: '简体中文',
         selectText: '选择语言',
-        editLinkText: '在 GitHub 上编辑此页',
         nav: [
           {
             text: '指南',
             link: '/zh/guide/'
           },
           {
-            text: '功能',
-            items: genNav(deepClone(ComponentNav), 'ZH')
+            text: '行业',
+            items: genNav(deepClone(IndustryNav), 'ZH')
           },
           {
-            text: '生态系统',
-            items: genNav(deepClone(EcosystemNav), 'ZH')
+            text: '产品',
+            items: genNav(deepClone(ProductNav), 'ZH')
           },
           {
-            text: '捐赠',
-            link: '/zh/donate/'
+            text: '技术',
+            items: genNav(deepClone(TechnicalNav), 'ZH')
           },
           {
-            text: '中文站点(gitee)',
-            link: 'https://panjiachen.gitee.io/vue-element-admin-site/zh/'
+            text: '开发',
+            items: genNav(deepClone(DevNav), 'ZH')
           },
           {
-            text: '招聘',
-            link: '/zh/job/'
+            text: '个人中心',
+            items: genNav(deepClone(PersonNav), 'ZH')
           }
         ],
         sidebar: {
@@ -190,7 +75,7 @@ module.exports = {
             }
           ],
           '/zh/feature/component/': getComponentSidebar(
-            deepClone(ComponentNav),
+            deepClone(PersonNav),
             'ZH'
           ),
           '/zh/feature/script/': [
@@ -203,16 +88,8 @@ module.exports = {
   },
   locales: {
     '/': {
-      lang: 'en-US',
-      description: 'A magical vue admin'
-    },
-    '/zh/': {
       lang: 'zh-CN',
       description: 'A magical vue admin'
-    },
-    '/es/': {
-      lang: 'es-ES',
-      description: 'Un administrador mágico de vue'
     }
   },
   configureWebpack: {

@@ -17,7 +17,7 @@ element-ui 的通用样式变量可能无法满足所有定制需求，你可以
 }
 ```
 
-一些全局的 element-ui 样式修改可以在 [@/styles/element-ui.scss](https://github.com/PanJiaChen/vue-element-admin/blob/master/src/styles/element-ui.scss) 中进行设置。
+一些全局的 element-ui 样式修改可以在 [@/styles/element-ui.scss](https://github.com/PanJiaChen/doc-site/blob/master/src/styles/element-ui.scss) 中进行设置。
 
 <br/>
 
@@ -28,7 +28,7 @@ element-ui 的通用样式变量可能无法满足所有定制需求，你可以
 ### element-ui 官方文档页面 换肤方式
 
 element-ui 升级为 2.0 之后官方文档的右上角提供了动态换肤的功能，本项目也提供了该功能。
-代码地址：[@/components/ThemePicker](https://github.com/PanJiaChen/vue-element-admin/blob/master/src/components/ThemePicker/index.vue)。
+代码地址：[@/components/ThemePicker](https://github.com/PanJiaChen/doc-site/blob/master/src/components/ThemePicker/index.vue)。
 
 **简单说明一下它的原理：**
 element-ui 2.0 版本之后所有的样式都是基于 SCSS 编写的，所有的颜色都是基于几个基础颜色[变量](https://github.com/PanJiaChen/custom-element-theme/blob/master/element-variables.scss)来设置的，所以就不难实现动态换肤了，只要找到那几个颜色变量修改它就可以了。
@@ -99,12 +99,12 @@ npm i element-theme -g
 npm install
 ```
 
-首先执行 `et -i` 生成 `element-variables.scss` 存放样式变量的文件，然后进入 `element-variables.scss` 文件 修改你自己需要的变量，修改完成之后执行 `et` ， 编译主题，最后执行`gulp` 生成命名空间。所有生成文件在 `dist` 目录下，你只需复制文件下所有内容到 `vue-element-admin` 项目中 `src/assets/custom-theme` 进行覆盖替换就行
+首先执行 `et -i` 生成 `element-variables.scss` 存放样式变量的文件，然后进入 `element-variables.scss` 文件 修改你自己需要的变量，修改完成之后执行 `et` ， 编译主题，最后执行`gulp` 生成命名空间。所有生成文件在 `dist` 目录下，你只需复制文件下所有内容到 `doc-site` 项目中 `src/assets/custom-theme` 进行覆盖替换就行
 
 ::: tip
 如果需要修改打包生成样式命名空间的名字 只要修改该[变量](https://github.com/PanJiaChen/custom-element-theme/blob/master/gulpfile.js#L6)即可
 :::
 
-![](https://panjiachen.gitee.io/gitee-cdn/vue-element-admin-site/0726b472-90f4-4fe9-a665-26fb8f9795c3.gif)
+![](https://panjiachen.gitee.io/gitee-cdn/doc-site/0726b472-90f4-4fe9-a665-26fb8f9795c3.gif)
 
 [更多动态换肤文章](https://segmentfault.com/a/1190000009762198#articleHeader2)

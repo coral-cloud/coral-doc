@@ -18,7 +18,7 @@ Or use [Deep Selectors](https://vue-loader.vuejs.org/guide/scoped-css.html#deep-
 }
 ```
 
-Some global element-ui style modifications can be set in [@/styles/element-ui.scss](https://github.com/PanJiaChen/vue-element-admin/blob/master/src/styles/element-ui.scss).
+Some global element-ui style modifications can be set in [@/styles/element-ui.scss](https://github.com/PanJiaChen/doc-site/blob/master/src/styles/element-ui.scss).
 
 <br/>
 
@@ -30,7 +30,7 @@ This project provides two kinds of dynamic skinning functions, each has its own 
 
 After the element-ui is upgraded to 2.0, the dynamic peel function is provided in the upper right corner of the official document. This project also provides a change function.
 
-Code: [@/components/ThemePicker](https://github.com/PanJiaChen/vue-element-admin/blob/master/src/components/ThemePicker/index.vue)。
+Code: [@/components/ThemePicker](https://github.com/PanJiaChen/doc-site/blob/master/src/components/ThemePicker/index.vue)。
 
 **Briefly explain its principle:** All styles after element-ui version 2.0 are based on SCSS, all colors are set based on a few basic color [variables](https://github.com/PanJiaChen/custom-element-theme/blob/master/element-variables.scss), so it is not difficult to achieve dynamic skinning, as long as find a few color variables to modify it. First, we need to get the version number of element-ui through `package.json` and request the corresponding style according to the version number. After you get the style, you will change the color, replace it with the color variable you want, and then dynamically add the `style` tag to override the original CSS style.
 
@@ -99,10 +99,10 @@ Enter the project directory Install dependencies
 npm install
 ```
 
-First execute `et -i` to generate `element-variables.scss` file that stores style variables, then enter `element-variables.scss` file to modify your own variables, execute `et` after modification, compile subject, and finally Execute `gulp` to generate a namespace. All generated files are in the `dist` directory. You just copy all the contents of the file to `src/assets/custom-theme` in the `vue-element-admin` project.
+First execute `et -i` to generate `element-variables.scss` file that stores style variables, then enter `element-variables.scss` file to modify your own variables, execute `et` after modification, compile subject, and finally Execute `gulp` to generate a namespace. All generated files are in the `dist` directory. You just copy all the contents of the file to `src/assets/custom-theme` in the `doc-site` project.
 
 ::: tip
 If you need to modify the name of the package generation style namespace, just modify the [variable](https://github.com/PanJiaChen/custom-element-theme/blob/master/gulpfile.js#L6).
 :::
 
-![](https://panjiachen.gitee.io/gitee-cdn/vue-element-admin-site/0726b472-90f4-4fe9-a665-26fb8f9795c3.gif)
+![](https://panjiachen.gitee.io/gitee-cdn/doc-site/0726b472-90f4-4fe9-a665-26fb8f9795c3.gif)

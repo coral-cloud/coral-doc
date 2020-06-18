@@ -1,7 +1,7 @@
 {
-  "name": "vue-element-admin-site",
+  "name": "doc-site",
   "version": "2.0.0",
-  "description": "vue-element-admin-site",
+  "description": "doc-site",
   "main": "index.js",
   "scripts": {
     "dev": "vuepress dev docs",
@@ -19,7 +19,7 @@
     "semi": false,
     "singleQuote": true
   },
-  "author": "PanJiaChen",
+  "author": "wuhaocn",
   "license": "ISC",
   "devDependencies": {
     "prettier": "1.14.2",

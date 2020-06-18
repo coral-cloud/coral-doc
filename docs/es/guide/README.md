@@ -6,13 +6,13 @@ pageClass: getting-started
 
 [![vue](https://img.shields.io/badge/vue-2.6.10-brightgreen.svg)](https://github.com/vuejs/vue)
 [![element-ui](https://img.shields.io/badge/element--ui-2.7.0-brightgreen.svg)](https://github.com/ElemeFE/element)
-[![Build Status](https://travis-ci.org/PanJiaChen/vue-element-admin.svg?branch=master)](https://travis-ci.org/PanJiaChen/vue-element-admin)
-[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/PanJiaChen/vue-element-admin/blob/master/LICENSE)
-[![GitHub release](https://img.shields.io/github/release/PanJiaChen/vue-element-admin.svg)](https://github.com/PanJiaChen/vue-element-admin/releases)
-[![donate](https://img.shields.io/badge/%24-donate-ff69b4.svg)](https://panjiachen.gitee.io/vue-element-admin-site/zh/donate)
-[![GitHub stars](https://img.shields.io/github/stars/PanJiaChen/vue-element-admin.svg?style=social&label=Stars)](https://github.com/PanJiaChen/vue-element-admin)
+[![Build Status](https://travis-ci.org/PanJiaChen/doc-site.svg?branch=master)](https://travis-ci.org/PanJiaChen/doc-site)
+[![license](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/PanJiaChen/doc-site/blob/master/LICENSE)
+[![GitHub release](https://img.shields.io/github/release/PanJiaChen/doc-site.svg)](https://github.com/PanJiaChen/doc-site/releases)
+[![donate](https://img.shields.io/badge/%24-donate-ff69b4.svg)](https://panjiachen.gitee.io/doc-site/zh/donate)
+[![GitHub stars](https://img.shields.io/github/stars/PanJiaChen/doc-site.svg?style=social&label=Stars)](https://github.com/PanJiaChen/doc-site)
 
-[vue-element-admin](http://panjiachen.github.io/vue-element-admin) es una solución front-end lista para producción para interfaces de administración. Se basa en [vue](https://github.com/vuejs/vue) y utiliza el kit de interfaz de usuario [element-ui](https://github.com/ElemeFE/element).
+[doc-site](http://panjiachen.github.io/doc-site) es una solución front-end lista para producción para interfaces de administración. Se basa en [vue](https://github.com/vuejs/vue) y utiliza el kit de interfaz de usuario [element-ui](https://github.com/ElemeFE/element).
 
 Es un administrador vue mágico basado en el nuevo conjunto de desarrollo de vue, solución i18n incorporada, plantillas típicas para aplicaciones empresariales, muchas características increíbles. Te ayuda a construir grandes aplicaciones complejas de una sola página. Creo que sean cuales sean tus necesidades, este proyecto te ayudará.
 
@@ -20,11 +20,11 @@ Es un administrador vue mágico basado en el nuevo conjunto de desarrollo de vue
 Este proyecto integra muchas características que no puedes usar, causará mucha redundancia de código. Si tu proyecto no presta atención a este problema, también puedes desarrollarlo directamente basándote en él.
 De lo contrario, puedes usar [vue-admin-template](https://github.com/PanJiaChen/vue-admin-template).
 
-- Solución integrada: [vue-element-admin](https://github.com/PanJiaChen/vue-element-admin)
+- Solución integrada: [doc-site](https://github.com/PanJiaChen/doc-site)
 - Plantilla Básica: [vue-admin-template](https://github.com/PanJiaChen/vue-admin-template)
 - Desktop: [electron-vue-admin](https://github.com/PanJiaChen/electron-vue-admin)
 - Typescript: [vue-typescript-admin-template](https://github.com/Armour/vue-typescript-admin-template) (Créditos: [@Armour](https://github.com/Armour))
-- Otros: [awesome-project](https://github.com/PanJiaChen/vue-element-admin/issues/2312)
+- Otros: [awesome-project](https://github.com/PanJiaChen/doc-site/issues/2312)
   :::
 
 <br/>
@@ -160,10 +160,10 @@ Este proyecto ha incorporado las siguientes plantillas, y han construido un anda
 
 ```bash
 # clonar el proyecto
-git clone https://github.com/PanJiaChen/vue-element-admin.git
+git clone https://github.com/PanJiaChen/doc-site.git
 
 # entrar en el directorio del proyecto
-cd vue-element-admin
+cd doc-site
 
 # instalar dependencias
 npm install
@@ -178,23 +178,23 @@ Esto se abrirá automáticamente [http://localhost:9527](http://localhost:9527).
 
 Si ves la siguiente página, entonces has tenido éxito.
 
-![](https://panjiachen.gitee.io/gitee-cdn/vue-element-admin-site/1bc334a6-32a8-4f29-a037-ac3f5ce32588.png)
+![](https://panjiachen.gitee.io/gitee-cdn/doc-site/1bc334a6-32a8-4f29-a037-ac3f5ce32588.png)
 
 Tenemos modelos integrados, componentes estándar, datos simulados, recarga módulos hot, administración de estado, i18n, enrutador global, etc. Puedes continuar explorando otros documentos para obtener más detalles sobre esos temas.
 
 <br/>
 
 ::: tip
-**Sugerencia:** Puedes usar `vue-element-admin` como una caja de herramientas o como un repositorio de solución de integración, se recomienda hacer un desarrollo secundario sobre la base de `vue-admin-template`, si necesitas alguna característica adicional, la puedes copiar desde `vue-element-admin`.
+**Sugerencia:** Puedes usar `doc-site` como una caja de herramientas o como un repositorio de solución de integración, se recomienda hacer un desarrollo secundario sobre la base de `vue-admin-template`, si necesitas alguna característica adicional, la puedes copiar desde `doc-site`.
 :::
 
 ## Contribución
 
-El repositorio de documentación es [vue-element-admin-site](https://github.com/PanJiaChen/vue-element-admin-site) basado en el desarrollo [vuepress](https://github.com/vuejs/vuepress).
+El repositorio de documentación es [doc-site](https://github.com/PanJiaChen/doc-site) basado en el desarrollo [vuepress](https://github.com/vuejs/vuepress).
 
 Puede haber algunos errores ortográficos o de traducción al escribir este documento. Eres bienvenido a señalar por issue o por pr.
 
-[vue-element-admin](https://github.com/PanJiaChen/vue-element-admin) también continúa iterando, resumiendo y resumiendo más funciones, y resume las mejores prácticas de los escenarios de productos templates/components/business de negocio en el medio y de back office. Este proyecto también espera tu participación y [comentarios](https://github.com/PanJiaChen/vue-element-admin/issues).
+[doc-site](https://github.com/PanJiaChen/doc-site) también continúa iterando, resumiendo y resumiendo más funciones, y resume las mejores prácticas de los escenarios de productos templates/components/business de negocio en el medio y de back office. Este proyecto también espera tu participación y [comentarios](https://github.com/PanJiaChen/doc-site/issues).
 
 ## Donar
 

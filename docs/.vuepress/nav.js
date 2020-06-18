@@ -1,41 +1,28 @@
-var EcosystemNav = [
+var IndustryNav = [
   {
-    textEN: 'Repositories',
-    textES: 'Repositorios',
-    textZH: '项目',
+    textEN: 'Industry',
+    textES: 'Industry',
+    textZH: '行业咨询',
     items: [
       {
-        text: 'vue-element-admin',
-        link: 'https://github.com/PanJiaChen/vue-element-admin'
+        text: '5G',
+        link: 'https://github.com/wuhaocn/doc-site'
       },
       {
-        text: 'vue-admin-template',
-        link: 'https://github.com/PanJiaChen/vue-admin-template'
+        text: 'RCS',
+        link: 'https://github.com/wuhaocn/doc-site'
       },
       {
-        text: 'electron-vue-admin',
-        link: 'https://github.com/PanJiaChen/electron-vue-admin'
+        text: '物联网',
+        link: 'https://github.com/wuhaocn/doc-site'
       },
       {
-        text: 'vue-typescript-admin-template',
-        link: 'https://github.com/Armour/vue-typescript-admin-template'
+        text: '工业互联网',
+        link: 'https://github.com/wuhaocn/doc-site'
       },
       {
-        text: 'awesome-project',
-        link: 'https://github.com/PanJiaChen/vue-element-admin/issues/2312'
-      },
-      {
-        text: 'vue-countTo',
-        link: 'https://github.com/PanJiaChen/vue-countTo'
-      },
-      {
-        text: 'vue-split-pane',
-        link: 'https://github.com/PanJiaChen/vue-split-pane'
-      },
-      {
-        text: 'awesome-bookmarks',
-        link: 'https://github.com/PanJiaChen/awesome-bookmarks',
-        type: 'ZH'
+        text: '大数据',
+        link: 'https://github.com/wuhaocn/doc-site'
       }
     ]
   },
@@ -45,110 +32,192 @@ var EcosystemNav = [
     textZH: '帮助',
     items: [
       {
-        textZH: '国内文档(解决Github.io访问慢的问题)',
-        link: 'https://panjiachen.gitee.io/vue-element-admin-site/zh'
-      },
-      {
-        text: 'Gitter',
-        textZH: 'Gitter讨论组',
-        link: 'https://gitter.im/vue-element-admin/discuss'
-      },
-      {
-        textZH: '作者Blog',
-        link: 'https://jianshiapp.com/circles/1209',
-        type: 'ZH'
-      },
-      {
-        textZH: '常见问题',
-        link: '/guide/other/faq.md',
-        type: 'ZH'
-      },
-      {
-        textZH: 'QQ群',
-        link: 'https://github.com/PanJiaChen/vue-element-admin/issues/602',
-        type: 'ZH'
-      },
-      {
-        textZH: '作者个人微博',
-        link: 'https://weibo.com/u/3423485724',
-        type: 'ZH'
-      },
-      {
-        text: 'Changelog',
-        textES: 'Registro de cambios',
-        textZH: '更新记录',
-        link: 'https://github.com/PanJiaChen/vue-element-admin/releases'
+        text: '联系我们',
+        textZH: '联系我们',
+        link: 'https://gitter.im/doc-site/discuss'
       }
     ]
   }
 ]
 
-var ComponentNav = [
+var ProductNav = [
   {
-    text: 'Component',
-    textES: 'Componente',
-    textZH: '组件',
+    text: 'Product',
+    textES: 'Product',
+    textZH: '产品',
     items: [
       {
-        text: 'Rich Text Editor',
-        textES: 'Editor de Texto Enriquecido',
-        textZH: '富文本',
+        text: '5G',
+        textES: '5G',
+        textZH: '5G',
         link: '/feature/component/rich-editor.md'
       },
       {
-        text: 'Markdown Editor',
-        textES: 'Editor de Markdown',
-        textZH: 'Markdown 编辑器',
+        text: 'RCS',
+        textES: 'RCS',
+        textZH: 'RCS',
         link: '/feature/component/markdown-editor.md'
       },
       {
-        text: 'Svg Icon',
-        textES: 'Icono Svg',
-        textZH: 'Svg Icon 图标',
+        text: 'IOT',
+        textES: 'IOT',
+        textZH: '物联网',
         link: '/feature/component/svg-icon.md'
       },
       {
-        text: 'Clipboard',
-        textES: 'Portapapeles',
-        textZH: '复制粘贴',
-        link: '/feature/component/clipboard.md'
+        text: '工业互联网',
+        textES: '工业互联网',
+        textZH: '工业互联网',
+        link: '/feature/component/svg-icon.md'
       },
       {
-        text: 'Excel',
-        textZH: 'Excel',
+        text: '大数据',
+        textZH: '大数据',
         link: '/feature/component/excel.md'
-      },
-      {
-        text: 'Pagination',
-        textES: 'Paginación',
-        textZH: 'Pagination 分页',
-        link: '/feature/component/pagination.md'
-      },
-      {
-        text: 'Tree Table',
-        textES: 'Tabla de Árbol',
-        textZH: 'Tree Table 树形表格',
-        link: '/feature/component/tree-table.md'
       }
     ]
   },
   {
-    text: 'Script',
+    text: '帮助',
     items: [
       {
-        text: 'Svgo',
+        text: '联系我们',
         link: '/feature/script/svgo.md'
-      },
-      {
-        text: 'New',
-        textES: 'Nuevo',
-        link: '/feature/script/new.md'
       }
     ]
   }
 ]
 
+var TechnicalNav = [
+  {
+    text: 'Product',
+    textES: 'Product',
+    textZH: '产品',
+    items: [
+      {
+        text: '5G',
+        textES: '5G',
+        textZH: '5G',
+        link: '/feature/component/rich-editor.md'
+      },
+      {
+        text: 'RCS',
+        textES: 'RCS',
+        textZH: 'RCS',
+        link: '/feature/component/markdown-editor.md'
+      },
+      {
+        text: 'IOT',
+        textES: 'IOT',
+        textZH: '物联网',
+        link: '/feature/component/svg-icon.md'
+      },
+      {
+        text: '工业互联网',
+        textES: '工业互联网',
+        textZH: '工业互联网',
+        link: '/feature/component/svg-icon.md'
+      },
+      {
+        text: '大数据',
+        textZH: '大数据',
+        link: '/feature/component/excel.md'
+      }
+    ]
+  },
+  {
+    text: '帮助',
+    items: [
+      {
+        text: '联系我们',
+        link: '/feature/script/svgo.md'
+      }
+    ]
+  }
+]
+
+var DevNav = [
+  {
+    text: 'Product',
+    textES: 'Product',
+    textZH: '产品',
+    items: [
+      {
+        text: '5G',
+        textES: '5G',
+        textZH: '5G',
+        link: '/feature/component/rich-editor.md'
+      },
+      {
+        text: 'RCS',
+        textES: 'RCS',
+        textZH: 'RCS',
+        link: '/feature/component/markdown-editor.md'
+      },
+      {
+        text: 'IOT',
+        textES: 'IOT',
+        textZH: '物联网',
+        link: '/feature/component/svg-icon.md'
+      },
+      {
+        text: '工业互联网',
+        textES: '工业互联网',
+        textZH: '工业互联网',
+        link: '/feature/component/svg-icon.md'
+      },
+      {
+        text: '大数据',
+        textZH: '大数据',
+        link: '/feature/component/excel.md'
+      }
+    ]
+  },
+  {
+    text: '帮助',
+    items: [
+      {
+        text: '联系我们',
+        link: '/feature/script/svgo.md'
+      }
+    ]
+  }
+]
+
+var PersonNav = [
+  {
+    text: 'Product',
+    textES: 'Product',
+    textZH: '产品',
+    items: [
+      {
+        text: '个人项目',
+        textES: '个人项目',
+        textZH: '个人项目',
+        link: '/feature/component/rich-editor.md'
+      },
+      {
+        text: '个人资料',
+        textES: '个人资料',
+        textZH: '个人资料',
+        link: '/feature/component/markdown-editor.md'
+      }
+    ]
+  },
+  {
+    text: '帮助',
+    items: [
+      {
+        text: '联系我们',
+        link: '/feature/script/svgo.md'
+      }
+    ]
+  }
+]
 module.exports = {
-  EcosystemNav,
-  ComponentNav
+  IndustryNav,
+  ProductNav,
+  TechnicalNav,
+  DevNav,
+  PersonNav
 }

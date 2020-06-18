@@ -21,13 +21,13 @@ export function isGitee() {
 }
 
 export function loadGitter() {
-  const id = 'vue-element-admin/discuss'
+  const id = 'doc-site/discuss'
   const existingScript = document.getElementById(id)
   if (existingScript) return
   const script = document.createElement('script')
   script.id = id
   script.text =
-    "((window.gitter = {}).chat = {}).options = {room: 'vue-element-admin/discuss'};"
+    "((window.gitter = {}).chat = {}).options = {room: 'doc-site/discuss'};"
   document.body.appendChild(script)
   dynamicLoadScript('https://sidecar.gitter.im/dist/sidecar.v1.js')
 }

@@ -24,7 +24,7 @@ footer: Licencia MIT | Derechos de autor © 2017-presente PanJiaChen
 
 ```bash
 # clonar el proyecto
-git clone https://github.com/PanJiaChen/vue-element-admin.git
+git clone https://github.com/PanJiaChen/doc-site.git
 
 # instalar dependencias
 npm install

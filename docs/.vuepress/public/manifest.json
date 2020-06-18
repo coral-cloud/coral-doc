@@ -1,6 +1,6 @@
 {
-  "name": "vue-element-admin-doc",
-  "short_name": "vue-element-admin-doc",
+  "name": "doc-site",
+  "short_name": "doc-site",
   "icons": [
     {
       "src": "/icons/192x192.png",
