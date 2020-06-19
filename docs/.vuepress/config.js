@@ -1,12 +1,12 @@
 var nav = require('./nav.js')
-var { IndustryNav, ProductNav, TechnicalNav, DevNav, PersonNav } = nav
+var { XgNav, XgAppNav, IoTNav, IaIoTNav, DevNav } = nav
 
 var utils = require('./utils.js')
 var { genNav, getComponentSidebar, deepClone } = utils
 
 module.exports = {
-  title: 'doc-site',
-  description: '文档站点',
+  title: '5G生态实验室',
+  description: '5G生态实验室',
   base: '/doc-site/',
   head: [
     [
@@ -33,54 +33,39 @@ module.exports = {
             link: '/zh/guide/'
           },
           {
-            text: '行业',
-            items: genNav(deepClone(IndustryNav), 'ZH')
+            text: '5G基础网络',
+            items: genNav(deepClone(XgNav), 'ZH')
           },
           {
-            text: '产品',
-            items: genNav(deepClone(ProductNav), 'ZH')
+            text: '5G应用消息',
+            items: genNav(deepClone(XgAppNav), 'ZH')
+          },
+          {
+            text: '物联网',
+            items: genNav(deepClone(IoTNav), 'ZH')
+          },
+          {
+            text: '工业互联网',
+            items: genNav(deepClone(IaIoTNav), 'ZH')
           },
           {
             text: '技术',
-            items: genNav(deepClone(TechnicalNav), 'ZH')
-          },
-          {
-            text: '开发',
             items: genNav(deepClone(DevNav), 'ZH')
-          },
-          {
-            text: '个人中心',
-            items: genNav(deepClone(PersonNav), 'ZH')
           }
         ],
         sidebar: {
           '/zh/guide/': [
             {
-              title: '基础',
-              collapsable: false,
+              title: '5G网络',
+              collapsable: true,
               children: genEssentialsSidebar('/zh')
-            },
-            {
-              title: '进阶',
-              collapsable: false,
-              children: genAdvancedSidebar('/zh')
-            },
-            {
-              title: '其它',
-              collapsable: false,
-              children: [
-                '/zh/guide/other/faq.md',
-                '/zh/guide/other/release-notes.md'
-              ]
             }
-          ],
-          '/zh/feature/component/': getComponentSidebar(
-            deepClone(PersonNav),
-            'ZH'
-          ),
-          '/zh/feature/script/': [
-            '/zh/feature/script/svgo.md',
-            '/zh/feature/script/new.md'
+            // ,
+            // {
+            //   title: '5G应用',
+            //   collapsable: true,
+            //   children: genAdvancedSidebar('/zh')
+            // }
           ]
         }
       }
@@ -89,7 +74,7 @@ module.exports = {
   locales: {
     '/': {
       lang: 'zh-CN',
-      description: 'A magical vue admin'
+      description: '5G生态导读'
     }
   },
   configureWebpack: {
@@ -103,41 +88,14 @@ module.exports = {
 }
 
 function genEssentialsSidebar(type = '') {
-  const mapArr = [
-    '/guide/',
-    '/guide/essentials/layout.md',
-    '/guide/essentials/router-and-nav.md',
-    '/guide/essentials/permission.md',
-    '/guide/essentials/tags-view.md',
-    '/guide/essentials/new-page.md',
-    '/guide/essentials/style.md',
-    '/guide/essentials/server.md',
-    '/guide/essentials/mock-api.md',
-    '/guide/essentials/import.md',
-    '/guide/essentials/deploy.md',
-    '/guide/essentials/env.md'
-  ]
+  const mapArr = ['/xg/5gc.md', '/xg/device.md']
   return mapArr.map(i => {
     return type + i
   })
 }
 
 function genAdvancedSidebar(type = '') {
-  const mapArr = [
-    '/guide/advanced/cors.md',
-    '/guide/advanced/eslint.md',
-    '/guide/advanced/git-hook.md',
-    '/guide/advanced/style-guide.md',
-    '/guide/advanced/lazy-loading.md',
-    '/guide/advanced/chart.md',
-    '/guide/advanced/icon.md',
-    '/guide/advanced/cdn.md',
-    '/guide/advanced/theme.md',
-    '/guide/advanced/i18n.md',
-    '/guide/advanced/error.md',
-    '/guide/advanced/webpack.md',
-    '/guide/advanced/sass.md'
-  ]
+  const mapArr = ['/xgapp/maap.md', '/xgapp/rcs.md']
   return mapArr.map(i => {
     return type + i
   })

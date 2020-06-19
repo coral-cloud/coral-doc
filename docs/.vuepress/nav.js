@@ -1,28 +1,20 @@
-var IndustryNav = [
+var XgNav = [
   {
-    textEN: 'Industry',
-    textES: 'Industry',
-    textZH: '行业咨询',
+    textEN: 'Xg',
+    textES: 'Xg',
+    textZH: '5G基础网络',
     items: [
       {
-        text: '5G',
-        link: 'https://github.com/wuhaocn/doc-site'
+        text: '5G核心网',
+        link: '/xg/5gc.md'
       },
       {
-        text: 'RCS',
-        link: 'https://github.com/wuhaocn/doc-site'
+        text: '5G接入网',
+        link: '/xg/gnode.md'
       },
       {
-        text: '物联网',
-        link: 'https://github.com/wuhaocn/doc-site'
-      },
-      {
-        text: '工业互联网',
-        link: 'https://github.com/wuhaocn/doc-site'
-      },
-      {
-        text: '大数据',
-        link: 'https://github.com/wuhaocn/doc-site'
+        text: '5G接入终端',
+        link: '/xg/device.md'
       }
     ]
   },
@@ -34,13 +26,93 @@ var IndustryNav = [
       {
         text: '联系我们',
         textZH: '联系我们',
-        link: 'https://gitter.im/doc-site/discuss'
+        link: '/xg/contact.md'
       }
     ]
   }
 ]
 
-var ProductNav = [
+var XgAppNav = [
+  {
+    text: 'xgapp',
+    textES: 'xgapp',
+    textZH: '5g消息',
+    items: [
+      {
+        text: '5GMSG',
+        textES: '5G',
+        textZH: '5G',
+        link: '/xgapp/5gmsg.md'
+      },
+      {
+        text: 'RCS',
+        textES: 'RCS',
+        textZH: 'RCS',
+        link: '/xgapp/rcs.md'
+      },
+      {
+        text: 'IMS',
+        textES: 'IMS',
+        textZH: 'IMS',
+        link: '/xgapp/ims.md'
+      },
+      {
+        text: 'MAAP',
+        textES: 'MAAP',
+        textZH: 'MAAP',
+        link: '/xgapp/maap.md'
+      }
+    ]
+  },
+  {
+    text: '帮助',
+    items: [
+      {
+        text: '联系我们',
+        link: '/xgapp/contact.md'
+      }
+    ]
+  }
+]
+
+var IoTNav = [
+  {
+    text: 'IoT',
+    textES: 'IoT',
+    textZH: 'IoT',
+    items: [
+      {
+        text: '接入',
+        textES: '接入',
+        textZH: '接入',
+        link: '/iot/access.md'
+      },
+      {
+        text: '控制',
+        textES: '控制',
+        textZH: '控制',
+        link: '/iot/gateway.md'
+      },
+      {
+        text: '分析',
+        textES: '分析',
+        textZH: '分析',
+        link: '/iot/any.md'
+      }
+    ]
+  },
+  {
+    text: '帮助',
+    items: [
+      {
+        text: '联系我们',
+        link: '/iot/contact.md'
+      }
+    ]
+  }
+]
+
+var IaIoTNav = [
   {
     text: 'Product',
     textES: 'Product',
@@ -50,30 +122,7 @@ var ProductNav = [
         text: '5G',
         textES: '5G',
         textZH: '5G',
-        link: '/feature/component/rich-editor.md'
-      },
-      {
-        text: 'RCS',
-        textES: 'RCS',
-        textZH: 'RCS',
-        link: '/feature/component/markdown-editor.md'
-      },
-      {
-        text: 'IOT',
-        textES: 'IOT',
-        textZH: '物联网',
-        link: '/feature/component/svg-icon.md'
-      },
-      {
-        text: '工业互联网',
-        textES: '工业互联网',
-        textZH: '工业互联网',
-        link: '/feature/component/svg-icon.md'
-      },
-      {
-        text: '大数据',
-        textZH: '大数据',
-        link: '/feature/component/excel.md'
+        link: '/iaiot/access.md'
       }
     ]
   },
@@ -82,55 +131,7 @@ var ProductNav = [
     items: [
       {
         text: '联系我们',
-        link: '/feature/script/svgo.md'
-      }
-    ]
-  }
-]
-
-var TechnicalNav = [
-  {
-    text: 'Product',
-    textES: 'Product',
-    textZH: '产品',
-    items: [
-      {
-        text: '5G',
-        textES: '5G',
-        textZH: '5G',
-        link: '/feature/component/rich-editor.md'
-      },
-      {
-        text: 'RCS',
-        textES: 'RCS',
-        textZH: 'RCS',
-        link: '/feature/component/markdown-editor.md'
-      },
-      {
-        text: 'IOT',
-        textES: 'IOT',
-        textZH: '物联网',
-        link: '/feature/component/svg-icon.md'
-      },
-      {
-        text: '工业互联网',
-        textES: '工业互联网',
-        textZH: '工业互联网',
-        link: '/feature/component/svg-icon.md'
-      },
-      {
-        text: '大数据',
-        textZH: '大数据',
-        link: '/feature/component/excel.md'
-      }
-    ]
-  },
-  {
-    text: '帮助',
-    items: [
-      {
-        text: '联系我们',
-        link: '/feature/script/svgo.md'
+        link: '/iaiot/contact.md'
       }
     ]
   }
@@ -138,38 +139,15 @@ var TechnicalNav = [
 
 var DevNav = [
   {
-    text: 'Product',
-    textES: 'Product',
-    textZH: '产品',
+    text: 'dev',
+    textES: 'dev',
+    textZH: 'dev',
     items: [
       {
-        text: '5G',
-        textES: '5G',
-        textZH: '5G',
-        link: '/feature/component/rich-editor.md'
-      },
-      {
-        text: 'RCS',
-        textES: 'RCS',
-        textZH: 'RCS',
-        link: '/feature/component/markdown-editor.md'
-      },
-      {
-        text: 'IOT',
-        textES: 'IOT',
-        textZH: '物联网',
-        link: '/feature/component/svg-icon.md'
-      },
-      {
-        text: '工业互联网',
-        textES: '工业互联网',
-        textZH: '工业互联网',
-        link: '/feature/component/svg-icon.md'
-      },
-      {
-        text: '大数据',
-        textZH: '大数据',
-        link: '/feature/component/excel.md'
+        text: 'AI',
+        textES: 'AI',
+        textZH: '人工智能',
+        link: '/dev/java.md'
       }
     ]
   },
@@ -178,46 +156,15 @@ var DevNav = [
     items: [
       {
         text: '联系我们',
-        link: '/feature/script/svgo.md'
-      }
-    ]
-  }
-]
-
-var PersonNav = [
-  {
-    text: 'Product',
-    textES: 'Product',
-    textZH: '产品',
-    items: [
-      {
-        text: '个人项目',
-        textES: '个人项目',
-        textZH: '个人项目',
-        link: '/feature/component/rich-editor.md'
-      },
-      {
-        text: '个人资料',
-        textES: '个人资料',
-        textZH: '个人资料',
-        link: '/feature/component/markdown-editor.md'
-      }
-    ]
-  },
-  {
-    text: '帮助',
-    items: [
-      {
-        text: '联系我们',
-        link: '/feature/script/svgo.md'
+        link: '/dev/contact.md'
       }
     ]
   }
 ]
 module.exports = {
-  IndustryNav,
-  ProductNav,
-  TechnicalNav,
-  DevNav,
-  PersonNav
+  XgNav,
+  XgAppNav,
+  IoTNav,
+  IaIoTNav,
+  DevNav
 }

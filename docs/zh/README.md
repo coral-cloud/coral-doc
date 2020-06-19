@@ -1,21 +1,21 @@
 ---
 home: true
-heroImage: /home.png
+heroImage: /home.jpeg
 title: a
-actionText: 快速上手 →
+actionText: 产品介绍
 actionLink: /zh/guide/
 features:
-  - title: 丰富功能
-    details: 提炼了典型的业务模型，提供了丰富的功能组件
-  - title: 最佳实践
-    details: 合理的框架选择，良好的工程实践助你持续产出高质量代码
-  - title: 最新技术栈
-    details: 使用 vue/vuex/vue-router/element 等前端前沿技术开发
-  - title: 权限验证
-    details: 根据权限动态加载路由，渲染侧边栏
-  - title: 国际化
-    details: 内建业界通用的国际化方案
-  - title: 主题
-    details: 支持多种动态换肤功能
-footer: MIT Licensed | Copyright © 2017-present PanJiaChen
+  - title: 5G基础网络
+    details: 5G核心网，5G接入网，5G接入网关，网络能力开放平台
+  - title: 5G消息（RCS/IMS）
+    details: VoNR/VoWifi，短信/富媒体消息/群组/MAAP
+  - title: 工业互联网
+    details: 混合接入网关：NBIoT/Lora/MQTT/PLC，智能分析平台，工业自动化
+  - title: 物联网
+    details: 物联网网关，物联网接入网，物联网控制分析平台
+  - title: 大数据
+    details: 智能分析平台
+  - title: 人工智能
+    details: 智能控制，深度学习，智能建模
+footer: MIT Licensed | Copyright © 2020-present wuhao
 ---
